@@ -9,7 +9,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 default_args = {
-    'owner': 'datamasterylab.com',
+    'owner': 'nguyentientai223.com',
     'depends_on_past': False,
     'start_date': datetime(2025, 3, 3),
     # 'execution_timeout': timedelta(minutes=120),

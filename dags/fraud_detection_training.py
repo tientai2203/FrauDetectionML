@@ -360,10 +360,10 @@ class FraudDetectionTraining:
                 searcher = RandomizedSearchCV(
                     pipeline,
                     param_dist,
-                    n_iter=20,
+                    n_iter=10,
                     scoring=make_scorer(fbeta_score, beta=2, zero_division=0),
                     cv=StratifiedKFold(n_splits=3, shuffle=True),
-                    n_jobs=-1,
+                    n_jobs=2,
                     refit=True,
                     error_score='raise',
                     random_state=self.config['model'].get('seed', 42)
